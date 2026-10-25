@@ -1576,7 +1576,7 @@ main > .section:last-of-type,
 .track-toggle[aria-expanded="true"] .track-num { color: var(--accent-text); }
 .track-toggle[aria-expanded="true"] .track-name { color: var(--text); }
 
-.track-panel { overflow: hidden; }
+.track-panel { overflow: hidden; overflow: clip; }
 
 .track-panel-inner {
   display: grid;
@@ -1594,10 +1594,20 @@ main > .section:last-of-type,
 
 .lyrics-head {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  align-items: center;
   gap: 12px;
-  margin-bottom: 14px;
+  margin-bottom: clamp(16px, 2vw, 22px);
+  padding-bottom: 9px;
+  border-bottom: 1px solid var(--panel-line);
+}
+
+/* hairline that runs from the label out to the credit */
+.lyrics-head::after {
+  content: "";
+  order: 1;
+  flex: 1 1 auto;
+  height: 1px;
+  background: linear-gradient(90deg, var(--panel-line), transparent);
 }
 
 .lyrics-head h5,
@@ -1612,42 +1622,139 @@ main > .section:last-of-type,
 }
 
 .lyrics-credit {
-  font-size: 10.5px;
-  letter-spacing: 0.1em;
+  order: 2;
+  flex: none;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--text-faint);
 }
 
 .lyrics-body {
-  max-width: 54ch;
-  font-size: 15px;
-  line-height: 1.75;
+  --lyric-gutter: clamp(24px, 2.6vw, 32px);
+  --lyric-pad: clamp(16px, 1.8vw, 20px);
+  counter-reset: stanza;
+  position: relative;
+  max-width: 56ch;
+  padding-left: calc(var(--lyric-gutter) + var(--lyric-pad));
+  font-size: 15.5px;
+  line-height: 1.62;
   color: var(--text);
+  text-wrap: pretty;
 }
 
-.lyric-stanza { margin: 0 0 1.15em; }
+/* vertical rule that separates the stanza numbers from the text */
+.lyrics-body::before {
+  content: "";
+  position: absolute;
+  top: 0.15em;
+  bottom: 0.15em;
+  left: var(--lyric-gutter);
+  width: 1px;
+  background: var(--panel-line);
+  opacity: 0.7;
+}
+
+.lyric-stanza {
+  position: relative;
+  counter-increment: stanza;
+  margin: 0 0 1.45em;
+}
+
 .lyric-stanza:last-child { margin-bottom: 0; }
+
+/* hanging stanza number, kept inside the panel */
+.lyric-stanza::before {
+  content: counter(stanza, decimal-leading-zero);
+  position: absolute;
+  top: 0.3em;
+  left: calc(-1 * (var(--lyric-gutter) + var(--lyric-pad)));
+  width: calc(var(--lyric-gutter) - 12px);
+  text-align: right;
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  color: var(--text-faint);
+  opacity: 0.45;
+  transition: color 0.16s var(--ease), opacity 0.16s var(--ease);
+}
+
+.lyric-stanza:hover::before { opacity: 0.8; }
+
+.lyric-stanza:has(.lyric-annot.is-active)::before {
+  color: var(--accent-text);
+  opacity: 1;
+}
+
+.lyric-line { display: block; }
+
+.lyric-line--aside {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.lyric-line--aside + .lyric-line--aside { margin-top: 0.1em; }
 
 .lyric-annot {
   display: inline;
-  padding: 0 2px;
-  margin: 0 -2px;
+  margin: 0;
+  padding: 0;
   border: 0;
-  border-bottom: 1px solid rgba(184, 65, 42, 0.55);
-  background: linear-gradient(180deg, transparent 62%, rgba(184, 65, 42, 0.16) 62%);
+  background: none;
   color: var(--text);
   font: inherit;
   line-height: inherit;
   text-align: left;
   cursor: pointer;
+  transition: color 0.16s var(--ease);
+}
+
+.lyric-annot-text {
+  text-decoration: underline;
+  text-decoration-color: rgba(184, 65, 42, 0.55);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+  text-decoration-skip-ink: auto;
+  transition: color 0.16s var(--ease), text-decoration-color 0.16s var(--ease);
+}
+
+/* superscript footnote chip — sits above the baseline, never below it */
+.lyric-annot-mark {
+  display: inline-block;
+  margin-left: 0.34em;
+  padding: 0 0.34em;
+  border: 1px solid rgba(184, 65, 42, 0.45);
+  font-family: var(--font-body);
+  font-size: 0.6em;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0;
+  vertical-align: 0.62em;
+  color: var(--accent-text);
+  transform: translateY(-0.02em);
   transition: background 0.16s var(--ease), border-color 0.16s var(--ease), color 0.16s var(--ease);
 }
 
-.lyric-annot:hover,
-.lyric-annot:focus-visible,
-.lyric-annot.is-active {
-  border-bottom-color: var(--accent-text);
-  background: linear-gradient(180deg, transparent 58%, rgba(184, 65, 42, 0.32) 58%);
+.lyric-annot:hover .lyric-annot-text,
+.lyric-annot:focus-visible .lyric-annot-text,
+.lyric-annot.is-active .lyric-annot-text {
+  color: #fff;
+  text-decoration-color: var(--accent-text);
+}
+
+.lyric-annot:hover .lyric-annot-mark,
+.lyric-annot:focus-visible .lyric-annot-mark {
+  border-color: var(--accent);
+  background: rgba(184, 65, 42, 0.22);
+  color: #fff;
+}
+
+.lyric-annot.is-active .lyric-annot-mark {
+  border-color: var(--accent);
+  background: var(--accent);
   color: #fff;
 }
 
@@ -1690,25 +1797,41 @@ main > .section:last-of-type,
 }
 
 .note-list {
-  margin: 10px 0 0;
+  margin: 12px 0 0;
   padding: 0;
   list-style: none;
   border-top: var(--line);
 }
 
 .note {
-  padding: 13px 0;
+  position: relative;
+  display: grid;
+  grid-template-columns: 22px minmax(0, 1fr);
+  column-gap: 10px;
+  padding: 13px 0 13px 12px;
   border-bottom: var(--line);
-  transition: background 0.2s var(--ease), box-shadow 0.2s var(--ease);
+  border-left: 2px solid transparent;
+  transition: background 0.2s var(--ease), border-color 0.2s var(--ease);
 }
 
+.note-index {
+  grid-row: 1 / span 2;
+  align-self: start;
+  padding-top: 1px;
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.5;
+  color: var(--text-faint);
+  transition: color 0.2s var(--ease);
+}
+
+.note.is-active .note-index { color: var(--accent-text); }
+
 .note.is-active {
+  border-left-color: var(--accent);
   background: rgba(184, 65, 42, 0.08);
-  box-shadow: inset 2px 0 0 var(--accent);
-  padding-left: 12px;
-  margin-left: -12px;
-  padding-right: 10px;
-  margin-right: -10px;
 }
 
 .note blockquote {
@@ -2025,6 +2148,14 @@ a.track-spotlight:focus-visible .ts-title { color: var(--accent-text); }
   .live-grid-2 { grid-template-columns: 1fr; }
 }
 
+@media (max-width: 520px) {
+  .lyrics-body {
+    --lyric-gutter: 22px;
+    --lyric-pad: 14px;
+    font-size: 14.5px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .release-art img,
   .track-chevron::before,
@@ -2204,6 +2335,14 @@ a.track-spotlight:focus-visible .ts-title { color: var(--accent-text); }
 
   .track-chevron,
   .release-summary-chevron { display: none; }
+
+  .lyrics-body { color: #000; max-width: none; }
+  .lyrics-body::before { background: #bbb; }
+  .lyric-line--aside { color: #333; }
+  .lyric-stanza::before { color: #666; opacity: 1; }
+  .lyric-annot-text { color: #000; text-decoration-color: #666; }
+  .lyric-annot-mark { border-color: #666; color: #222; }
+  .lyrics-head, .lyrics-head h5, .lyrics-credit { color: #000; }
 }
 
 .note-label {
@@ -2218,7 +2357,9 @@ a.track-spotlight:focus-visible .ts-title { color: var(--accent-text); }
   color: var(--text-faint);
 }
 
-.note--studio p { margin-top: 2px; }
+/* studio notes have no lyric index — keep the copy in the text column */
+.note--studio .note-label { grid-column: 2; grid-row: 1; }
+.note--studio p { grid-column: 2; grid-row: 2; margin-top: 2px; }
 
 /* Music hero — tighter than the home hero, no logo lockup */
 .hero--music .hero-title {
