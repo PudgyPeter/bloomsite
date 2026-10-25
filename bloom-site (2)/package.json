@@ -1,0 +1,30 @@
+{
+  "name": "bloom-band-website",
+  "version": "0.1.0",
+  "description": "Official website for Bloom - melodic hardcore band from Sydney, Australia",
+  "author": "Bloom Band <booking@bloomband.com.au>",
+  "license": "MIT",
+  "keywords": [
+    "melodic-hardcore",
+    "metalcore",
+    "Sydney-band",
+    "Australian-rock"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "watch-css": "watchmedo shell-command --recursive --drop --wait 'npm run minify-css' --glob '*.css'",
+    "minify-css": "cssnano --input styles.css --output temp.min.css",
+    "lint": "eslint assets/script.js",
+    "format": "prettier --write \"*.js\" \"*.css\"",
+    "format:check": "prettier --check \"*.js\" \"*.css\""
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "cssnano-cli": "^6.0.0"
+  }
+}

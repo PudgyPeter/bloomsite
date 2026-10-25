@@ -1,0 +1,31 @@
+# Dependencies (eslint, prettier, cssnano)
+node_modules/
+
+# Local tool config — contains a live API key, never commit
+kilo.jsonc
+.kilo/
+.kilocode/
+
+# Build artefacts
+temp.min.css
+assets/temp.min.css
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+~$*
