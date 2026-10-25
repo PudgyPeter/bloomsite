@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Homepage -->
   <url>
-    <loc>https://bloomband.com.au/</loc>
+    <loc>https://pudgypeter.github.io/bloomsite/</loc>
     <lastmod>2025-12-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
@@ -10,7 +10,7 @@
 
   <!-- Members Page -->
   <url>
-    <loc>https://bloomband.com.au/members.html</loc>
+    <loc>https://pudgypeter.github.io/bloomsite/members.html</loc>
     <lastmod>2025-12-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -18,7 +18,7 @@
 
   <!-- Music Page -->
   <url>
-    <loc>https://bloomband.com.au/music.html</loc>
+    <loc>https://pudgypeter.github.io/bloomsite/music.html</loc>
     <lastmod>2025-12-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
@@ -26,7 +26,7 @@
 
   <!-- Wireframe Mockups (no crawl) -->
   <url>
-    <loc>https://bloomband.com.au/wireframe.html</loc>
+    <loc>https://pudgypeter.github.io/bloomsite/wireframe.html</loc>
     <lastmod>2025-12-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.1</priority>
@@ -34,7 +34,7 @@
 
   <!-- Live dates to be added -->
   <url>
-    <loc>https://bloomband.com.au/tour.html</loc>
+    <loc>https://pudgypeter.github.io/bloomsite/tour.html</loc>
     <lastmod>2025-12-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
