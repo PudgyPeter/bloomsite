@@ -6,6 +6,10 @@ Melodic hardcore from Sydney's northern beaches since 2017. Five schoolfriends, 
 
 This is a static HTML/CSS/JavaScript website showcasing Bloom's music, members, and discography. The site uses vanilla JavaScript with no build step required.
 
+**Live site:** https://pudgypeter.github.io/bloomsite/
+
+Hosted on GitHub Pages (branch `main`, root folder). Pushing to `main` republishes automatically.
+
 ## Quick Start
 
 ```bash
@@ -27,7 +31,8 @@ The site runs entirely client-side using standard web technologies - perfect for
 ## Assets
 
 ### Images (folder: `assets/img/`)
-- WebP + PNG formats preferred
+- All artwork and photos are WebP (quality 82, alpha preserved where present)
+- `og-image.webp` is the 1200x630 social sharing card
 - Aspect ratios standardized (4:5 for members, 1:1 for albums)
 - Max recommended dimension: 800px width
 
