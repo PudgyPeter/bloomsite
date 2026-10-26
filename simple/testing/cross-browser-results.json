@@ -1,0 +1,98 @@
+[
+  {
+    "browser": "Google Chrome 155",
+    "page": "index.html",
+    "title": "Bloom | Melodic hardcore from Sydney",
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "h1": 1,
+    "stylesheets": 1,
+    "scripts": 0,
+    "fonts": [
+      "Big Shoulders Display:loaded",
+      "Work Sans:loaded"
+    ],
+    "heroButton": "See the discography",
+    "errors": []
+  },
+  {
+    "browser": "Google Chrome 155",
+    "page": "members.html",
+    "title": "Members | Bloom",
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "h1": 1,
+    "stylesheets": 1,
+    "scripts": 0,
+    "fonts": [
+      "Big Shoulders Display:loaded",
+      "Work Sans:loaded"
+    ],
+    "heroButton": null,
+    "errors": []
+  },
+  {
+    "browser": "Google Chrome 155",
+    "page": "music.html",
+    "title": "Music | Bloom",
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "h1": 1,
+    "stylesheets": 1,
+    "scripts": 0,
+    "fonts": [
+      "Big Shoulders Display:loaded",
+      "Work Sans:loaded"
+    ],
+    "heroButton": null,
+    "errors": []
+  },
+  {
+    "browser": "Mozilla Firefox 158",
+    "page": "index.html",
+    "title": "Bloom | Melodic hardcore from Sydney",
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "h1": 1,
+    "stylesheets": 1,
+    "scripts": 0,
+    "fonts": [
+      "Big Shoulders Display:loaded",
+      "Work Sans:loaded"
+    ],
+    "heroButton": "See the discography",
+    "errors": []
+  },
+  {
+    "browser": "Mozilla Firefox 158",
+    "page": "members.html",
+    "title": "Members | Bloom",
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "h1": 1,
+    "stylesheets": 1,
+    "scripts": 0,
+    "fonts": [
+      "Big Shoulders Display:loaded",
+      "Work Sans:loaded"
+    ],
+    "heroButton": null,
+    "errors": []
+  },
+  {
+    "browser": "Mozilla Firefox 158",
+    "page": "music.html",
+    "title": "Music | Bloom",
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "h1": 1,
+    "stylesheets": 1,
+    "scripts": 0,
+    "fonts": [
+      "Big Shoulders Display:loaded",
+      "Work Sans:loaded"
+    ],
+    "heroButton": null,
+    "errors": []
+  }
+]

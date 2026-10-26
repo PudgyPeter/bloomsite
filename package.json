@@ -16,15 +16,15 @@
   },
   "scripts": {
     "start": "python -m http.server 8000",
-    "watch-css": "watchmedo shell-command --recursive --drop --wait 'npm run minify-css' --glob '*.css'",
-    "minify-css": "cssnano --input styles.css --output temp.min.css",
-    "lint": "eslint assets/script.js",
-    "format": "prettier --write \"*.js\" \"*.css\"",
-    "format:check": "prettier --check \"*.js\" \"*.css\""
+    "watch-css": "watchmedo shell-command --recursive --drop --wait \"npm run minify-css\" --glob \"*.css\"",
+    "minify-css": "cssnano assets/styles.css assets/temp.min.css",
+    "lint": "eslint --config assets/.eslintrc.json assets/script.js",
+    "format": "prettier --config assets/.prettierrc.json --write \"*.html\" \"assets/*.js\" \"assets/*.css\"",
+    "format:check": "prettier --config assets/.prettierrc.json --check \"*.html\" \"assets/*.js\" \"assets/*.css\""
   },
   "devDependencies": {
-    "eslint": "^8.0.0",
-    "prettier": "^3.0.0",
-    "cssnano-cli": "^6.0.0"
+    "cssnano-cli": "^1.0.5",
+    "eslint": "^8.57.1",
+    "prettier": "^3.6.2"
   }
 }

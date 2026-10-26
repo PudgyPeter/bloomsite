@@ -23,10 +23,11 @@ The site runs entirely client-side using standard web technologies - perfect for
 
 ## Structure
 
-- `index.html` — Homepage with band bio, lineup, and featured release
+- `index.html` — Homepage with band bio, lineup, featured release and contact form
 - `members.html` — Detailed member profiles with tabbed content
 - `music.html` — Discography catalog with embedded Spotify players and lyrics
-- `wireframe.html`, `members-wireframe.html`, `music-wireframe.html` — Layout mockups for reference
+
+All pages share `assets/styles.css` and `assets/script.js`; images live in `assets/img/`.
 
 ## Assets
 
@@ -46,6 +47,21 @@ The site runs entirely client-side using standard web technologies - perfect for
 - Handles navigation toggles, tab panels, scrolling, hash routing
 - Prefers-reduced-motion aware
 
+## Contact form
+
+The form in `index.html#get-in-touch` is a demonstration form. It collects first name, last name, email address and comments, all marked `required`, and includes Submit and Reset buttons. Submitting a valid form opens the visitor's default mail client addressed to the site's contact address (`mailto:`); nothing is stored or sent by a server. Leaving any field blank blocks submission with the browser's built-in "Please fill out this field" prompt.
+
+## Development commands
+
+```bash
+npm install          # install eslint, prettier and cssnano-cli
+npm start            # serve at http://localhost:8000
+npm run lint         # eslint assets/script.js
+npm run format       # prettier over HTML, CSS and JS
+npm run format:check # verify formatting
+npm run minify-css   # write assets/temp.min.css (build artefact, git-ignored)
+```
+
 ## Key Features Implemented
 
 ✅ Responsive navigation with mobile dropdown  
@@ -55,7 +71,8 @@ The site runs entirely client-side using standard web technologies - perfect for
 ✅ Skip-to-main navigation for accessibility  
 ✅ Dark color scheme with accessible contrast  
 ✅ Loading="lazy" on non-critical images  
+✅ Required-field contact form with submit/reset  
 
 ---
 
-**Status**: School project in development. Not production-ready for live hosting without additional security layers (CSP, https, meta tags).
+**Status**: School project in development.

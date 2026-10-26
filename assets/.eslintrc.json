@@ -4,15 +4,14 @@
     "es6": true
   },
   "parserOptions": {
-    "ecmaVersion": 5,
-    "sourceType": "module"
+    "ecmaVersion": 5
   },
   "rules": {
     "no-unused-vars": ["warn", { "args": "none" }],
     "eqeqeq": "error",
-    "curly": "error",
+    "curly": ["error", "multi-line"],
     "semi": "error",
-    "indent": ["error", 4],
-    "quotes": ["error", "single"]
+    "indent": ["error", 2],
+    "quotes": ["error", "double", { "avoidEscape": true }]
   }
 }

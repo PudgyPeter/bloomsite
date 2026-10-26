@@ -5,9 +5,8 @@
 ### ✅ Completed
 
 #### **Security & Privacy**
-- Added `http-equiv` meta tags for CSP and X-UA-Compatible support
-- Implemented basic Content Security Policy (CSP) restriction to prevent XSS
-- Meta tags restrict image/script/style-src sources for improved security
+- Added `X-UA-Compatible` meta tag for legacy browser support
+- Content Security Policy is documented as a server-header task: the meta-tag version was removed because it blocked the site's own stylesheet, script and images
 
 #### **SEO & Discoverability**
 - Enhanced meta descriptions with comprehensive keywords on all pages
@@ -46,11 +45,40 @@
 
 ### 🔜 Upcoming (Priority List)
 
-1. **Performance** - Image compression, minification of CSS/JS
+1. **Performance** - Image compression, cache headers on the host
 2. **Analytics** - Add Google Analytics 4 with consent mode
-3. **Forms** - Live dates booking form with backend integration
-4. **Video/Audio** - Embed Spotify players directly, add background music
-5. **Content** - Add "Live dates" section, press/interviews, FAQ
+3. **Forms** - Server-side handling for the contact form (currently a mailto demo)
+4. **Video/Audio** - Add background video, more live sessions
+5. **Content** - Add FAQ, press/interviews
+
+---
+
+## 0.1.1 — Rubric audit (2026-10-25)
+
+### Added
+- Contact section on the homepage (`#get-in-touch`) with First Name, Last Name, Email Address and Comments, all `required`, plus Submit and Reset buttons
+- Contact link in the main navigation on all three pages
+- Form, contact and hero-heading styles in `assets/styles.css`
+- `README.md` notes on the demo form and development commands
+
+### Fixed
+- Added a real `<h1>` to the homepage (the logo lockup), so every page has one
+- Footer column headings changed from `<h4>` to `<h3>` to remove a skipped heading level
+- Member tab panels changed from `<article role="tabpanel">` to `<div role="tabpanel">` (invalid role on `article`)
+- Removed `width="100%"` from Spotify iframes (invalid HTML value; CSS already sizes them)
+- Removed the invalid `meta http-equiv="Content-Security-Policy"` block, which blocked the site's own CSS, JS and images
+- Removed the broken `wireframe.html` page and its three deleted mockup files from `sitemap.xml` and `README.md`
+- Renamed images to meaningful, lowercase filenames (e.g. `BloomLogo+Distressed.webp` → `bloom-logo.webp`) and updated every reference
+- Removed inline `style` attributes from the footer and the stray `Privacy`/`Terms` placeholder links
+- Corrected mojibake characters (`â€”`, `â€™`, `â€¢`) left over from a bad encoding pass
+- Fixed `package.json` scripts (wrong paths, non-existent `cssnano-cli@6`) and added `.eslintrc.json`; `npm run lint`, `npm run format:check` and `npm run minify-css` now work
+- Reformatted `music.html` (it had 300+ lines over 200 characters) and the whole codebase with Prettier
+
+### Verified
+- W3C Nu HTML Checker: 0 errors, 0 warnings on all three pages
+- W3C CSS Validator: 0 errors
+- ESLint: 0 errors; Prettier: all files clean
+- Chrome, Edge and Firefox: no console errors, no horizontal overflow at 1440px or 390px
 
 ---
 

@@ -1,515 +1,671 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-AU">
-<head>
-  <meta charset="UTF-8">
-  <!-- Security & Privacy (no hosting needed - meta-only) -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com;">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- SEO & Social Media -->
-  <title>Bloom | Melodic hardcore from Sydney, Australia</title>
-  <meta name="description" content="Bloom is a melodic hardcore band from Sydney, Australia, formed in 2017. Five schoolfriends sharing music, tour dates, and discography since 2017.">
-  <meta name="keywords" content="melodic hardcore, metalcore, Sydney band, Australian rock, Bloom band">
-  <meta name="theme-color" content="#0d0c0b">
-  <meta property="og:title" content="Bloom | Melodic hardcore from Sydney, Australia">
-  <meta property="og:description" content="Five schoolfriends from Sydney's northern beaches. Melodic hardcore since 2017. Listen to The Light We Chase and more albums with embedded players.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://pudgypeter.github.io/bloomsite/">
-  <meta property="og:image" content="https://pudgypeter.github.io/bloomsite/assets/img/og-image.webp">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Bloom | Melodic hardcore from Sydney, Australia">
-  <meta name="twitter:description" content="Five schoolfriends from Sydney's northern beaches. Melodic hardcore since 2017.">
-  <meta property="og:site_name" content="Bloom Band">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Security & Privacy (no hosting needed - meta-only) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO & Social Media -->
+    <title>Bloom | Melodic hardcore from Sydney, Australia</title>
+    <meta
+      name="description"
+      content="Bloom is a melodic hardcore band from Sydney, Australia, formed in 2017. Five schoolfriends sharing music, tour dates, and discography since 2017."
+    />
+    <meta
+      name="keywords"
+      content="melodic hardcore, metalcore, Sydney band, Australian rock, Bloom band"
+    />
+    <meta name="theme-color" content="#0d0c0b" />
+    <meta property="og:title" content="Bloom | Melodic hardcore from Sydney, Australia" />
+    <meta
+      property="og:description"
+      content="Five schoolfriends from Sydney's northern beaches. Melodic hardcore since 2017. Listen to The Light We Chase and more albums with embedded players."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pudgypeter.github.io/bloomsite/" />
+    <meta
+      property="og:image"
+      content="https://pudgypeter.github.io/bloomsite/assets/img/og-image.webp"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bloom | Melodic hardcore from Sydney, Australia" />
+    <meta
+      name="twitter:description"
+      content="Five schoolfriends from Sydney's northern beaches. Melodic hardcore since 2017."
+    />
+    <meta property="og:site_name" content="Bloom Band" />
 
-  <!-- Fonts & Styles -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;900&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <!-- Performance: Minified CSS available for production -->
-  <link rel="stylesheet" href="assets/styles.css">
-</head>
+    <!-- Fonts & Styles -->
+    <!-- Performance: Minified CSS available for production -->
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
 
-<body>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-  <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main">
+        <a class="nav-mark" href="index.html" aria-label="Bloom — home">
+          <img src="assets/img/bloom-logo.webp" alt="Bloom" class="nav-mark-logo" />
+        </a>
 
-  <header class="site-header">
-    <nav class="nav" aria-label="Main">
-      <a class="nav-mark" href="index.html" aria-label="Bloom — home">
-        <img src="assets/img/BloomLogo+Distressed.webp" alt="Bloom" class="nav-mark-logo" />
-      </a>
+        <button
+          class="nav-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          <span class="nav-toggle-bars" aria-hidden="true"></span>
+        </button>
 
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
-        <span class="nav-toggle-bars" aria-hidden="true"></span>
-      </button>
-
-      <ul class="nav-links" id="primary-nav">
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="members.html">Members</a></li>
-        <li><a href="music.html">Music</a></li>
-        <li class="nav-social">
-          <ul class="social">
-            <li>
-              <a href="https://www.instagram.com/bloomsyd" aria-label="Bloom on Instagram">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" class="solid"/></svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://open.spotify.com/artist/65kdSVYKtaef3P8EOCGWHl" aria-label="Bloom on Spotify">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M7.6 9.4c2.9-.8 6.4-.5 8.9.9"/><path d="M8.1 12.4c2.4-.6 5.3-.4 7.5.8"/><path d="M8.6 15.3c1.9-.5 4.2-.3 5.9.6"/></svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/@bloomsyd" aria-label="Bloom on YouTube">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="6" width="19" height="12" rx="3.5"/><path d="M10.5 9.6l4.4 2.4-4.4 2.4z"/></svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/bloomsyd" aria-label="Bloom on Facebook">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.6 21v-7.4h2.5l.4-2.9h-2.9V8.8c0-.8.3-1.4 1.5-1.4h1.5V4.8c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8v2.2H9.2v2.9h2.5V21z" class="solid"/></svg>
-              </a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <a class="release-bar" href="music.html">
-    <span class="release-bar-inner">
-      <img src="assets/img/lightwechase.webp" alt="The Light We Chase album cover art" class="release-bar-art" loading="lazy" />
-      <span class="release-bar-label">Out now</span>
-      <span class="release-bar-text">
-        <strong>The Light We Chase</strong>
-        <span>second album &middot; Pure Noise Records</span>
-      </span>
-      <span class="release-bar-cta">Listen</span>
-    </span>
-  </a>
-
-  <main id="main">
-
-    <section class="hero hero--home">
-      <p class="eyebrow">Sydney, Australia <span aria-hidden="true">/</span> Est. 2017</p>
-
-      <img src="assets/img/BloomLogo+Distressed.webp" alt="Bloom" class="hero-logo" />
-
-      <p class="hero-sub">
-        Melodic hardcore from Sydney's northern beaches. Five schoolfriends,
-        one band, still playing together.
-      </p>
-
-      <div class="hero-actions">
-        <a class="btn" href="music.html">Listen to the music</a>
-        <a class="btn btn--ghost" href="members.html">Meet the band</a>
-      </div>
-
-      <dl class="hero-facts">
-        <div class="fact">
-          <dt>Formed</dt>
-          <dd>2017, Belrose NSW</dd>
-        </div>
-
-        <div class="fact">
-          <dt>Genre</dt>
-          <dd>Melodic hardcore, metalcore</dd>
-        </div>
-
-        <div class="fact">
-          <dt>Label</dt>
-          <dd>Pure Noise Records</dd>
-        </div>
-
-        <div class="fact">
-          <dt>Members</dt>
-          <dd>Five</dd>
-        </div>
-      </dl>
-    </section>
-
-    <section class="section">
-      <div class="intro-grid">
-        <div class="intro-copy">
-          <h2>The band</h2>
-
-          <p>
-            Bloom formed in 2017 when five schoolfriends from Belrose, on
-            Sydney's northern beaches, started writing music together after
-            hours in borrowed rooms.
-          </p>
-
-          <p>
-            Two early EPs, <em>Past Tense</em> (2018) and <em>In Passing</em>
-            (2020), built the band's reputation for pairing bruising riffs with
-            soaring melodies, and led to a deal with Greyscale Records. The
-            debut album <em>Maybe In Another Life</em> followed in 2024, with
-            <em>The Light We Chase</em> arriving a year later through Pure
-            Noise Records.
-          </p>
-
-          <p>
-            Since then the band have toured Australia and Europe, sharing stages
-            with Silverstein, Chelsea Grin and Currents, and played their first
-            headline shows in Japan.
-          </p>
-        </div>
-
-        <ul class="spec-list">
-          <li>
-            <span class="k">Formed</span>
-            <span class="v">2017, Sydney</span>
-          </li>
-
-          <li>
-            <span class="k">Members</span>
-            <span class="v">Five</span>
-          </li>
-
-          <li>
-            <span class="k">Latest release</span>
-            <span class="v">The Light We Chase (2025)</span>
-          </li>
-
-          <li>
-            <span class="k">Home label</span>
-            <span class="v">Pure Noise Records</span>
+        <ul class="nav-links" id="primary-nav">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="members.html">Members</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href="index.html#get-in-touch">Contact</a></li>
+          <li class="nav-social">
+            <ul class="social">
+              <li>
+                <a href="https://www.instagram.com/bloomsyd" aria-label="Bloom on Instagram">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="3" y="3" width="18" height="18" rx="5" />
+                    <circle cx="12" cy="12" r="4" />
+                    <circle cx="17.2" cy="6.8" r="1" class="solid" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://open.spotify.com/artist/65kdSVYKtaef3P8EOCGWHl"
+                  aria-label="Bloom on Spotify"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M7.6 9.4c2.9-.8 6.4-.5 8.9.9" />
+                    <path d="M8.1 12.4c2.4-.6 5.3-.4 7.5.8" />
+                    <path d="M8.6 15.3c1.9-.5 4.2-.3 5.9.6" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@bloomsyd" aria-label="Bloom on YouTube">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="2.5" y="6" width="19" height="12" rx="3.5" />
+                    <path d="M10.5 9.6l4.4 2.4-4.4 2.4z" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/bloomsyd" aria-label="Bloom on Facebook">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M14.6 21v-7.4h2.5l.4-2.9h-2.9V8.8c0-.8.3-1.4 1.5-1.4h1.5V4.8c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8v2.2H9.2v2.9h2.5V21z"
+                      class="solid"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </li>
         </ul>
-      </div>
-    </section>
+      </nav>
+    </header>
 
-    <section class="section">
-      <div class="section-head">
-        <h2>The lineup</h2>
-        <a class="section-link" href="members.html">All members</a>
-      </div>
+    <a class="release-bar" href="music.html">
+      <span class="release-bar-inner">
+        <img
+          src="assets/img/the-light-we-chase.webp"
+          alt="The Light We Chase album cover art"
+          class="release-bar-art"
+          loading="lazy"
+        />
+        <span class="release-bar-label">Out now</span>
+        <span class="release-bar-text">
+          <strong>The Light We Chase</strong>
+          <span>second album &middot; Pure Noise Records</span>
+        </span>
+        <span class="release-bar-cta">Listen</span>
+      </span>
+    </a>
 
-      <div class="lineup">
-        <a class="lineup-tile" href="members.html#member-jono">
-          <img src="assets/img/jono.webp" alt="Jono Hawkey" class="lineup-avatar" loading="lazy" />
-          <span class="lineup-caption">
-            <span class="m-name">Jono Hawkey</span>
-            <span class="m-role">Vocals</span>
-          </span>
-        </a>
+    <main id="main">
+      <section class="hero hero--home">
+        <p class="eyebrow">Sydney, Australia <span aria-hidden="true">/</span> Est. 2017</p>
 
-        <a class="lineup-tile" href="members.html#member-jarod">
-          <img src="assets/img/Jarod.webp" alt="Jarod McLaren" class="lineup-avatar" loading="lazy" />
-          <span class="lineup-caption">
-            <span class="m-name">Jarod McLaren</span>
-            <span class="m-role">Guitar</span>
-          </span>
-        </a>
+        <h1 class="hero-heading">
+          <img src="assets/img/bloom-logo.webp" alt="Bloom" class="hero-logo" />
+        </h1>
 
-        <a class="lineup-tile" href="members.html#member-oliver">
-          <img src="assets/img/Oliver.webp" alt="Oliver Butler" class="lineup-avatar" loading="lazy" />
-          <span class="lineup-caption">
-            <span class="m-name">Oliver Butler</span>
-            <span class="m-role">Guitar</span>
-          </span>
-        </a>
-
-        <a class="lineup-tile" href="members.html#member-andrew">
-          <img src="assets/img/andrew.webp" alt="Andrew Martin" class="lineup-avatar" loading="lazy" />
-          <span class="lineup-caption">
-            <span class="m-name">Andrew Martin</span>
-            <span class="m-role">Bass</span>
-          </span>
-        </a>
-
-        <a class="lineup-tile" href="members.html#member-jack">
-          <img src="assets/img/jack.webp" alt="Jack Van Vliet" class="lineup-avatar" loading="lazy" />
-          <span class="lineup-caption">
-            <span class="m-name">Jack Van Vliet</span>
-            <span class="m-role">Drums</span>
-          </span>
-        </a>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section-head">
-        <h2>Live</h2>
-        <a class="section-link" href="https://www.instagram.com/bloomsyd">Tour dates on Instagram</a>
-      </div>
-
-      <div class="live-grid">
-        <p class="live-intro">
-          Bloom's live show has carried the band from Sydney pub rooms to
-          festivals and headline tours overseas. For upcoming dates, tickets and
-          announcements, the band's Instagram is the place to check.
+        <p class="hero-sub">
+          Melodic hardcore from Sydney's northern beaches. Five schoolfriends, one band, still
+          playing together.
         </p>
 
-        <ul class="live-list">
-          <li>
-            <span class="live-year">2026</span>
-            <span class="live-detail">
-              <strong>The Light We Chase Australian Tour</strong>
-              Headline dates across the country, including a sold-out hometown
-              show in Sydney.
-            </span>
-          </li>
-
-          <li>
-            <span class="live-year">2025</span>
-            <span class="live-detail">
-              <strong>Europe with Silverstein</strong>
-              First European run, plus debut headline shows in Japan with Tokyo
-              sold out.
-            </span>
-          </li>
-
-          <li>
-            <span class="live-year">2023&ndash;24</span>
-            <span class="live-detail">
-              <strong>Good Things Festival and national supports</strong>
-              Shared stages with Bad Omens, Thornhill, Polaris, Make Them Suffer
-              and more.
-            </span>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section-head">
-        <h2>Latest release</h2>
-        <a class="section-link" href="music.html">All releases</a>
-      </div>
-
-      <div class="release-feature">
-        <div class="artwork">
-          <img src="assets/img/lightwechase.webp" alt="The Light We Chase album artwork" loading="lazy" />
+        <div class="hero-actions">
+          <a class="btn" href="music.html">Listen to the music</a>
+          <a class="btn btn--ghost" href="members.html">Meet the band</a>
         </div>
 
-        <div class="release-copy">
-          <div class="release-kind">Album</div>
-          <h3>The Light We Chase</h3>
+        <dl class="hero-facts">
+          <div class="fact">
+            <dt>Formed</dt>
+            <dd>2017, Belrose NSW</dd>
+          </div>
 
-          <p>
-            Bloom's second album, written and recorded in a matter of weeks with
-            producer Sam Bassal. Built around nostalgia for the band's shared
-            school years in Belrose, it moves from the heaviest material they
-            have recorded to their softest, with guest vocals from Patrick
-            Miranda, Jack Bergin and Mikaila Delgado.
+          <div class="fact">
+            <dt>Genre</dt>
+            <dd>Melodic hardcore, metalcore</dd>
+          </div>
+
+          <div class="fact">
+            <dt>Label</dt>
+            <dd>Pure Noise Records</dd>
+          </div>
+
+          <div class="fact">
+            <dt>Members</dt>
+            <dd>Five</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="section">
+        <div class="intro-grid">
+          <div class="intro-copy">
+            <h2>The band</h2>
+
+            <p>
+              Bloom formed in 2017 when five schoolfriends from Belrose, on Sydney's northern
+              beaches, started writing music together after hours in borrowed rooms.
+            </p>
+
+            <p>
+              Two early EPs, <em>Past Tense</em> (2018) and <em>In Passing</em> (2020), built the
+              band's reputation for pairing bruising riffs with soaring melodies, and led to a deal
+              with Greyscale Records. The debut album <em>Maybe In Another Life</em> followed in
+              2024, with <em>The Light We Chase</em> arriving a year later through Pure Noise
+              Records.
+            </p>
+
+            <p>
+              Since then the band have toured Australia and Europe, sharing stages with Silverstein,
+              Chelsea Grin and Currents, and played their first headline shows in Japan.
+            </p>
+          </div>
+
+          <ul class="spec-list">
+            <li>
+              <span class="k">Formed</span>
+              <span class="v">2017, Sydney</span>
+            </li>
+
+            <li>
+              <span class="k">Members</span>
+              <span class="v">Five</span>
+            </li>
+
+            <li>
+              <span class="k">Latest release</span>
+              <span class="v">The Light We Chase (2025)</span>
+            </li>
+
+            <li>
+              <span class="k">Home label</span>
+              <span class="v">Pure Noise Records</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>The lineup</h2>
+          <a class="section-link" href="members.html">All members</a>
+        </div>
+
+        <div class="lineup">
+          <a class="lineup-tile" href="members.html#member-jono">
+            <img
+              src="assets/img/jono.webp"
+              alt="Jono Hawkey"
+              class="lineup-avatar"
+              loading="lazy"
+            />
+            <span class="lineup-caption">
+              <span class="m-name">Jono Hawkey</span>
+              <span class="m-role">Vocals</span>
+            </span>
+          </a>
+
+          <a class="lineup-tile" href="members.html#member-jarod">
+            <img
+              src="assets/img/jarod.webp"
+              alt="Jarod McLaren"
+              class="lineup-avatar"
+              loading="lazy"
+            />
+            <span class="lineup-caption">
+              <span class="m-name">Jarod McLaren</span>
+              <span class="m-role">Guitar</span>
+            </span>
+          </a>
+
+          <a class="lineup-tile" href="members.html#member-oliver">
+            <img
+              src="assets/img/oliver.webp"
+              alt="Oliver Butler"
+              class="lineup-avatar"
+              loading="lazy"
+            />
+            <span class="lineup-caption">
+              <span class="m-name">Oliver Butler</span>
+              <span class="m-role">Guitar</span>
+            </span>
+          </a>
+
+          <a class="lineup-tile" href="members.html#member-andrew">
+            <img
+              src="assets/img/andrew.webp"
+              alt="Andrew Martin"
+              class="lineup-avatar"
+              loading="lazy"
+            />
+            <span class="lineup-caption">
+              <span class="m-name">Andrew Martin</span>
+              <span class="m-role">Bass</span>
+            </span>
+          </a>
+
+          <a class="lineup-tile" href="members.html#member-jack">
+            <img
+              src="assets/img/jack.webp"
+              alt="Jack Van Vliet"
+              class="lineup-avatar"
+              loading="lazy"
+            />
+            <span class="lineup-caption">
+              <span class="m-name">Jack Van Vliet</span>
+              <span class="m-role">Drums</span>
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>Live</h2>
+          <a class="section-link" href="https://www.instagram.com/bloomsyd"
+            >Tour dates on Instagram</a
+          >
+        </div>
+
+        <div class="live-grid">
+          <p class="live-intro">
+            Bloom's live show has carried the band from Sydney pub rooms to festivals and headline
+            tours overseas. For upcoming dates, tickets and announcements, the band's Instagram is
+            the place to check.
           </p>
 
-          <div class="release-meta">
-            <span>
-              <strong>Released</strong>
-              <br />31 October 2025
-            </span>
+          <ul class="live-list">
+            <li>
+              <span class="live-year">2026</span>
+              <span class="live-detail">
+                <strong>The Light We Chase Australian Tour</strong>
+                Headline dates across the country, including a sold-out hometown show in Sydney.
+              </span>
+            </li>
 
-            <span>
-              <strong>Label</strong>
-              <br />Pure Noise Records
-            </span>
+            <li>
+              <span class="live-year">2025</span>
+              <span class="live-detail">
+                <strong>Europe with Silverstein</strong>
+                First European run, plus debut headline shows in Japan with Tokyo sold out.
+              </span>
+            </li>
 
-            <span>
-              <strong>Producer</strong>
-              <br />Sam Bassal
-            </span>
+            <li>
+              <span class="live-year">2023&ndash;24</span>
+              <span class="live-detail">
+                <strong>Good Things Festival and national supports</strong>
+                Shared stages with Bad Omens, Thornhill, Polaris, Make Them Suffer and more.
+              </span>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-            <span>
-              <strong>Tracks</strong>
-              <br />11
-            </span>
+      <section class="section">
+        <div class="section-head">
+          <h2>Latest release</h2>
+          <a class="section-link" href="music.html">All releases</a>
+        </div>
+
+        <div class="release-feature">
+          <div class="artwork">
+            <img
+              src="assets/img/the-light-we-chase.webp"
+              alt="The Light We Chase album artwork"
+              loading="lazy"
+            />
           </div>
 
-          <div class="release-actions">
-            <a class="btn" href="music.html#release-the-light-we-chase">Tracklist, lyrics &amp; players</a>
-            <a class="btn btn--ghost" href="https://open.spotify.com/album/1taAA6FhpBSCYEe7ayadNx">Spotify</a>
+          <div class="release-copy">
+            <div class="release-kind">Album</div>
+            <h3>The Light We Chase</h3>
+
+            <p>
+              Bloom's second album, written and recorded in a matter of weeks with producer Sam
+              Bassal. Built around nostalgia for the band's shared school years in Belrose, it moves
+              from the heaviest material they have recorded to their softest, with guest vocals from
+              Patrick Miranda, Jack Bergin and Mikaila Delgado.
+            </p>
+
+            <div class="release-meta">
+              <span>
+                <strong>Released</strong>
+                <br />31 October 2025
+              </span>
+
+              <span>
+                <strong>Label</strong>
+                <br />Pure Noise Records
+              </span>
+
+              <span>
+                <strong>Producer</strong>
+                <br />Sam Bassal
+              </span>
+
+              <span>
+                <strong>Tracks</strong>
+                <br />11
+              </span>
+            </div>
+
+            <div class="release-actions">
+              <a class="btn" href="music.html#release-the-light-we-chase"
+                >Tracklist, lyrics &amp; players</a
+              >
+              <a class="btn btn--ghost" href="https://open.spotify.com/album/1taAA6FhpBSCYEe7ayadNx"
+                >Spotify</a
+              >
+            </div>
           </div>
+        </div>
+
+        <ol class="tracklist tracklist--home" aria-label="The Light We Chase tracklist">
+          <li class="track-row">
+            <span class="tr-num">01</span>
+            <a class="tr-title" href="music.html#track-the-light-we-chase-belrose">Belrose</a>
+            <span class="tr-time">1:49</span>
+          </li>
+          <li class="track-row">
+            <span class="tr-num">02</span>
+            <a class="tr-title" href="music.html#track-the-light-we-chase-forget-me-not"
+              >Forget Me Not</a
+            >
+            <span class="tr-time">3:43</span>
+          </li>
+          <li class="track-row">
+            <span class="tr-num">03</span>
+            <a class="tr-title" href="music.html#track-the-light-we-chase-out-of-reach"
+              >Out Of Reach</a
+            >
+            <span class="tr-time">2:49</span>
+          </li>
+          <li class="track-row">
+            <span class="tr-num">04</span>
+            <a class="tr-title" href="music.html#track-the-light-we-chase-keep-you"
+              >Keep You <span class="tr-feat">feat. Patrick Miranda</span></a
+            >
+            <span class="tr-time">3:10</span>
+          </li>
+          <li class="track-row">
+            <span class="tr-num">05</span>
+            <a class="tr-title" href="music.html#track-the-light-we-chase-glen-street"
+              >Glen Street</a
+            >
+            <span class="tr-time">4:02</span>
+          </li>
+          <li class="track-row">
+            <span class="tr-num">06</span>
+            <a class="tr-title" href="music.html#track-the-light-we-chase-life-moves-on-without-us"
+              >Life Moves On Without Us</a
+            >
+            <span class="tr-time">3:05</span>
+          </li>
+          <li class="track-row">
+            <span class="tr-num">07</span>
+            <a class="tr-title" href="music.html#track-the-light-we-chase-act-ii"
+              >Act II <span class="tr-feat">feat. Jack Bergin</span></a
+            >
+            <span class="tr-time">2:52</span>
+          </li>
+          <li class="track-row">
+            <span class="tr-num">08</span>
+            <a class="tr-title" href="music.html#track-the-light-we-chase-withered">Withered</a>
+            <span class="tr-time">3:40</span>
+          </li>
+          <li class="track-row">
+            <span class="tr-num">09</span>
+            <a class="tr-title" href="music.html#track-the-light-we-chase-only-sky">Only Sky</a>
+            <span class="tr-time">2:38</span>
+          </li>
+          <li class="track-row">
+            <span class="tr-num">10</span>
+            <a class="tr-title" href="music.html#track-the-light-we-chase-tongue-tied"
+              >Tongue Tied <span class="tr-feat">feat. Mikaila Delgado</span></a
+            >
+            <span class="tr-time">3:28</span>
+          </li>
+          <li class="track-row">
+            <span class="tr-num">11</span>
+            <a class="tr-title" href="music.html#track-the-light-we-chase-show-me-who-i-am"
+              >Show Me Who I Am</a
+            >
+            <span class="tr-time">3:18</span>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>Start here</h2>
+          <a class="section-link" href="music.html">Every song, annotated</a>
+        </div>
+
+        <div class="spotlight-grid">
+          <a class="track-spotlight" href="music.html#track-the-light-we-chase-keep-you">
+            <span class="ts-num">01</span>
+            <span>
+              <span class="ts-title">Keep You</span>
+              <span class="ts-meta">The Light We Chase &middot; 2025</span>
+              <span class="ts-note">
+                The hazy, nostalgic one, and the band's first credited guest feature, with Patrick
+                Miranda of Movements.
+              </span>
+            </span>
+          </a>
+
+          <a class="track-spotlight" href="music.html#track-the-light-we-chase-tongue-tied">
+            <span class="ts-num">02</span>
+            <span>
+              <span class="ts-title">Tongue Tied</span>
+              <span class="ts-meta">The Light We Chase &middot; 2025</span>
+              <span class="ts-note">
+                Acoustic at the start, full band by the second verse. A duet with Mikaila Delgado of
+                Yours Truly, and the softest Bloom song so far.
+              </span>
+            </span>
+          </a>
+
+          <a class="track-spotlight" href="music.html#track-the-light-we-chase-withered">
+            <span class="ts-num">03</span>
+            <span>
+              <span class="ts-title">Withered</span>
+              <span class="ts-meta">The Light We Chase &middot; 2025</span>
+              <span class="ts-note">
+                Eight years of the band in three and a half minutes: the strain, the sunken cost,
+                and what touring takes from the people who do it.
+              </span>
+            </span>
+          </a>
+
+          <a class="track-spotlight" href="music.html#track-maybe-in-another-life-you-i">
+            <span class="ts-num">04</span>
+            <span>
+              <span class="ts-title">You &amp; I</span>
+              <span class="ts-meta">Maybe In Another Life &middot; 2024</span>
+              <span class="ts-note">
+                The closing track of the debut album, and the moment the band's choruses got
+                genuinely huge.
+              </span>
+            </span>
+          </a>
+
+          <a class="track-spotlight" href="music.html#track-in-passing-in-passing">
+            <span class="ts-num">05</span>
+            <span>
+              <span class="ts-title">In Passing</span>
+              <span class="ts-meta">In Passing &middot; 2020</span>
+              <span class="ts-note">
+                The EP's title track, ending with one of the most quoted passages in the band's
+                catalogue.
+              </span>
+            </span>
+          </a>
+
+          <a class="track-spotlight" href="music.html#track-cold-cold">
+            <span class="ts-num">06</span>
+            <span>
+              <span class="ts-title">Cold</span>
+              <span class="ts-meta">Cold &middot; 2019</span>
+              <span class="ts-note">
+                The early single that first put the band on the map, and still their most-streamed
+                song.
+              </span>
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section section--contact" id="get-in-touch">
+        <div class="section-head">
+          <h2>Get in touch</h2>
+          <span class="section-note">Booking &amp; general enquiries</span>
+        </div>
+
+        <div class="contact-layout">
+          <div class="contact-copy">
+            <p>
+              For bookings, press, or anything else, send a message using the form. This is a
+              demonstration form for the site, so nothing is stored online.
+            </p>
+
+            <ul class="contact-direct">
+              <li>
+                <span class="label">Booking</span>
+                <a href="mailto:booking@bloomband.com.au">booking@bloomband.com.au</a>
+              </li>
+              <li>
+                <span class="label">General enquiries</span>
+                <a href="mailto:hello@bloomband.com.au">hello@bloomband.com.au</a>
+              </li>
+            </ul>
+          </div>
+
+          <form
+            class="contact-form"
+            action="mailto:hello@bloomband.com.au"
+            method="post"
+            enctype="text/plain"
+          >
+            <div class="form-row">
+              <div class="form-field">
+                <label for="first-name">First Name</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  autocomplete="given-name"
+                  required
+                />
+              </div>
+
+              <div class="form-field">
+                <label for="last-name">Last Name</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  autocomplete="family-name"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" autocomplete="email" required />
+            </div>
+
+            <div class="form-field">
+              <label for="comments">Comments</label>
+              <textarea id="comments" name="comments" rows="5" required></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn">Submit</button>
+              <button type="reset" class="btn btn--ghost">Reset</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="footer-mark">
+            <img src="assets/img/bloom-logo.webp" alt="Bloom" class="footer-mark-logo" />
+          </div>
+          <p>Melodic hardcore from Sydney, Australia. Formed 2017.</p>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Contact</h3>
+          <ul class="footer-contact">
+            <li>
+              <span class="label">Booking</span>
+              <a href="mailto:booking@bloomband.com.au">booking@bloomband.com.au</a>
+            </li>
+            <li>
+              <span class="label">General enquiries</span>
+              <a href="mailto:hello@bloomband.com.au">hello@bloomband.com.au</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Elsewhere</h3>
+          <ul class="footer-contact">
+            <li><a href="https://www.instagram.com/bloomsyd">Instagram</a></li>
+            <li>
+              <a href="https://open.spotify.com/artist/65kdSVYKtaef3P8EOCGWHl">Spotify</a>
+            </li>
+            <li><a href="https://www.youtube.com/@bloomsyd">YouTube</a></li>
+            <li><a href="https://www.facebook.com/bloomsyd">Facebook</a></li>
+            <li><a href="https://bloomsyd.bandcamp.com">Bandcamp</a></li>
+          </ul>
         </div>
       </div>
 
-      <ol class="tracklist tracklist--home" aria-label="The Light We Chase tracklist">
-        <li class="track-row">
-          <span class="tr-num">01</span>
-          <a class="tr-title" href="music.html#track-the-light-we-chase-belrose">Belrose</a>
-          <span class="tr-time">1:49</span>
-        </li>
-        <li class="track-row">
-          <span class="tr-num">02</span>
-          <a class="tr-title" href="music.html#track-the-light-we-chase-forget-me-not">Forget Me Not</a>
-          <span class="tr-time">3:43</span>
-        </li>
-        <li class="track-row">
-          <span class="tr-num">03</span>
-          <a class="tr-title" href="music.html#track-the-light-we-chase-out-of-reach">Out Of Reach</a>
-          <span class="tr-time">2:49</span>
-        </li>
-        <li class="track-row">
-          <span class="tr-num">04</span>
-          <a class="tr-title" href="music.html#track-the-light-we-chase-keep-you">Keep You <span class="tr-feat">feat. Patrick Miranda</span></a>
-          <span class="tr-time">3:10</span>
-        </li>
-        <li class="track-row">
-          <span class="tr-num">05</span>
-          <a class="tr-title" href="music.html#track-the-light-we-chase-glen-street">Glen Street</a>
-          <span class="tr-time">4:02</span>
-        </li>
-        <li class="track-row">
-          <span class="tr-num">06</span>
-          <a class="tr-title" href="music.html#track-the-light-we-chase-life-moves-on-without-us">Life Moves On Without Us</a>
-          <span class="tr-time">3:05</span>
-        </li>
-        <li class="track-row">
-          <span class="tr-num">07</span>
-          <a class="tr-title" href="music.html#track-the-light-we-chase-act-ii">Act II <span class="tr-feat">feat. Jack Bergin</span></a>
-          <span class="tr-time">2:52</span>
-        </li>
-        <li class="track-row">
-          <span class="tr-num">08</span>
-          <a class="tr-title" href="music.html#track-the-light-we-chase-withered">Withered</a>
-          <span class="tr-time">3:40</span>
-        </li>
-        <li class="track-row">
-          <span class="tr-num">09</span>
-          <a class="tr-title" href="music.html#track-the-light-we-chase-only-sky">Only Sky</a>
-          <span class="tr-time">2:38</span>
-        </li>
-        <li class="track-row">
-          <span class="tr-num">10</span>
-          <a class="tr-title" href="music.html#track-the-light-we-chase-tongue-tied">Tongue Tied <span class="tr-feat">feat. Mikaila Delgado</span></a>
-          <span class="tr-time">3:28</span>
-        </li>
-        <li class="track-row">
-          <span class="tr-num">11</span>
-          <a class="tr-title" href="music.html#track-the-light-we-chase-show-me-who-i-am">Show Me Who I Am</a>
-          <span class="tr-time">3:18</span>
-        </li>
-      </ol>
-    </section>
-
-    <section class="section">
-      <div class="section-head">
-        <h2>Start here</h2>
-        <a class="section-link" href="music.html">Every song, annotated</a>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Bloom. All rights reserved.</span>
+        <span>Melodic hardcore since 2017 &middot; Sydney, Australia</span>
       </div>
+    </footer>
 
-      <div class="spotlight-grid">
-        <a class="track-spotlight" href="music.html#track-the-light-we-chase-keep-you">
-          <span class="ts-num">01</span>
-          <span>
-            <span class="ts-title">Keep You</span>
-            <span class="ts-meta">The Light We Chase &middot; 2025</span>
-            <span class="ts-note">
-              The hazy, nostalgic one, and the band's first credited guest
-              feature, with Patrick Miranda of Movements.
-            </span>
-          </span>
-        </a>
-
-        <a class="track-spotlight" href="music.html#track-the-light-we-chase-tongue-tied">
-          <span class="ts-num">02</span>
-          <span>
-            <span class="ts-title">Tongue Tied</span>
-            <span class="ts-meta">The Light We Chase &middot; 2025</span>
-            <span class="ts-note">
-              Acoustic at the start, full band by the second verse. A duet with
-              Mikaila Delgado of Yours Truly, and the softest Bloom song so far.
-            </span>
-          </span>
-        </a>
-
-        <a class="track-spotlight" href="music.html#track-the-light-we-chase-withered">
-          <span class="ts-num">03</span>
-          <span>
-            <span class="ts-title">Withered</span>
-            <span class="ts-meta">The Light We Chase &middot; 2025</span>
-            <span class="ts-note">
-              Eight years of the band in three and a half minutes: the strain,
-              the sunken cost, and what touring takes from the people who do it.
-            </span>
-          </span>
-        </a>
-
-        <a class="track-spotlight" href="music.html#track-maybe-in-another-life-you-i">
-          <span class="ts-num">04</span>
-          <span>
-            <span class="ts-title">You &amp; I</span>
-            <span class="ts-meta">Maybe In Another Life &middot; 2024</span>
-            <span class="ts-note">
-              The closing track of the debut album, and the moment the band's
-              choruses got genuinely huge.
-            </span>
-          </span>
-        </a>
-
-        <a class="track-spotlight" href="music.html#track-in-passing-in-passing">
-          <span class="ts-num">05</span>
-          <span>
-            <span class="ts-title">In Passing</span>
-            <span class="ts-meta">In Passing &middot; 2020</span>
-            <span class="ts-note">
-              The EP's title track, ending with one of the most quoted passages
-              in the band's catalogue.
-            </span>
-          </span>
-        </a>
-
-        <a class="track-spotlight" href="music.html#track-cold-cold">
-          <span class="ts-num">06</span>
-          <span>
-            <span class="ts-title">Cold</span>
-            <span class="ts-meta">Cold &middot; 2019</span>
-            <span class="ts-note">
-              The early single that first put the band on the map, and still
-              their most-streamed song.
-            </span>
-          </span>
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer" id="contact">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <div class="footer-mark">
-          <img src="assets/img/BloomLogo+Distressed.webp" alt="Bloom" class="footer-mark-logo" />
-        </div>
-        <p>Melodic hardcore from Sydney, Australia. Formed 2017.</p>
-      </div>
-
-      <div>
-        <h4>Contact</h4>
-        <ul class="footer-contact">
-          <li>
-            <span class="label">Booking</span>
-            <a href="mailto:booking@bloomband.com.au">booking@bloomband.com.au</a>
-          </li>
-          <li>
-            <span class="label">General enquiries</span>
-            <a href="mailto:hello@bloomband.com.au">hello@bloomband.com.au</a>
-          </li>
-        </ul>
-      </div>
-
-      <div>
-        <h4>Elsewhere</h4>
-        <ul class="footer-contact">
-          <li><a href="https://www.instagram.com/bloomsyd">Instagram</a></li>
-          <li><a href="https://open.spotify.com/artist/65kdSVYKtaef3P8EOCGWHl">Spotify</a></li>
-          <li><a href="https://www.youtube.com/@bloomsyd">YouTube</a></li>
-          <li><a href="https://www.facebook.com/bloomsyd">Facebook</a></li>
-          <li><a href="https://bloomsyd.bandcamp.com">Bandcamp</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <span>&copy; 2026 Bloom. All rights reserved.</span>
-      <span>Melodic hardcore since 2017 • Sydney, Australia</span>
-      <span style="margin-left:16px;color:var(--text-muted);"><a href="#" aria-label="Privacy Policy" style="color:inherit;text-decoration:none;">Privacy</a></span>
-      <span style="margin-left:8px;color:var(--text-muted);"><a href="#" aria-label="Terms of Use" style="color:inherit;text-decoration:none;">Terms</a></span>
-    </div>
-  </footer>
-
-  <!-- Security meta tag (CSP) -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com;">
-
-  <script src="assets/script.js"></script>
-</body>
+    <script src="assets/script.js"></script>
+  </body>
 </html>

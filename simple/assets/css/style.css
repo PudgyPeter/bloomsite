@@ -1,0 +1,656 @@
+/* ==========================================
+   Bloom website stylesheet
+   ========================================== */
+
+/* ---------- 1. Fonts ---------- */
+
+@font-face {
+  font-family: "Big Shoulders Display";
+  src: url("../fonts/big-shoulders-display.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("../fonts/work-sans.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+/* ---------- 2. Page basics ---------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #0d0c0b;
+  color: #f0ebe2;
+  font-family: "Work Sans", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 12px 0;
+  font-family: "Big Shoulders Display", Impact, sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 76px;
+}
+
+h2 {
+  font-size: 42px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  margin: 0 0 16px 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Links only get an underline when you hover over them. */
+a {
+  color: #f0c4b4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: 2px solid #f0c4b4;
+  outline-offset: 2px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ---------- 3. Layout ---------- */
+
+.wrap {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 60px 0;
+  border-bottom: 1px solid #332e28;
+}
+
+.eyebrow {
+  margin: 0 0 10px 0;
+  color: #a89e8e;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.lede {
+  max-width: 620px;
+  color: #c0b6a6;
+  font-size: 19px;
+}
+
+/* ---------- 4. Header and navigation ---------- */
+
+.header {
+  border-bottom: 1px solid #332e28;
+}
+
+.header-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 0;
+}
+
+.logo {
+  color: #f0ebe2;
+  font-family: "Big Shoulders Display", Impact, sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.logo:hover {
+  color: #f0c4b4;
+  text-decoration: none;
+}
+
+.nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.nav a {
+  color: #c0b6a6;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.nav a:hover {
+  color: #f0ebe2;
+  text-decoration: none;
+}
+
+/* The page you are on gets a line under it. */
+.nav a.current {
+  color: #f0ebe2;
+  border-bottom: 2px solid #c2452c;
+}
+
+/* ---------- 5. Home page hero ---------- */
+
+.hero {
+  padding: 80px 0 60px 0;
+  border-bottom: 1px solid #332e28;
+}
+
+.hero h1 {
+  margin-bottom: 16px;
+  font-size: 96px;
+}
+
+.hero .lede {
+  margin-bottom: 26px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 22px;
+  border: 1px solid #c2452c;
+  background-color: #c2452c;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #f0c4b4;
+  border-color: #f0c4b4;
+  color: #1a0d0a;
+  text-decoration: none;
+}
+
+.button-light {
+  background-color: transparent;
+  border: 1px solid #332e28;
+  color: #f0ebe2;
+}
+
+.button-light:hover {
+  background-color: transparent;
+  border-color: #f0ebe2;
+  color: #f0ebe2;
+}
+
+/* ---------- 6. Quick facts ---------- */
+
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 40px 0 0 0;
+  padding: 24px 0 0 0;
+  border-top: 1px solid #332e28;
+}
+
+.facts dt {
+  margin-bottom: 4px;
+  color: #a89e8e;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.facts dd {
+  margin: 0;
+  font-size: 15px;
+}
+
+/* ---------- 7. Member photos on the home page ---------- */
+
+.lineup {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.lineup a {
+  color: #f0ebe2;
+}
+
+.lineup a:hover {
+  text-decoration: none;
+}
+
+.lineup img {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #332e28;
+}
+
+.lineup span {
+  display: block;
+  font-family: "Big Shoulders Display", Impact, sans-serif;
+  font-size: 19px;
+  text-transform: uppercase;
+}
+
+.lineup small {
+  display: block;
+  color: #a89e8e;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.lineup a:hover span {
+  color: #f0c4b4;
+}
+
+/* ---------- 8. Member profiles page ---------- */
+
+.member {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  padding: 34px 0;
+  border-bottom: 1px solid #332e28;
+}
+
+.member:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.member img {
+  width: 200px;
+  border: 1px solid #332e28;
+}
+
+.member div {
+  flex: 1;
+}
+
+.member-role {
+  margin: 0 0 14px 0;
+  color: #f0c4b4;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.member p {
+  color: #c0b6a6;
+}
+
+/* ---------- 9. Releases ---------- */
+
+.release {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  padding: 34px 0;
+  border-bottom: 1px solid #332e28;
+}
+
+.release:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.release img {
+  width: 240px;
+  border: 1px solid #332e28;
+}
+
+.release-info {
+  flex: 1;
+}
+
+.release-kind {
+  margin: 0 0 6px 0;
+  color: #a89e8e;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.release p {
+  max-width: 600px;
+  color: #c0b6a6;
+}
+
+/* ---------- 10. Song lists ---------- */
+
+.song-list {
+  margin-top: 20px;
+}
+
+.song-list li {
+  display: flex;
+  gap: 14px;
+  padding: 8px 0;
+  border-bottom: 1px solid #332e28;
+  font-size: 15px;
+}
+
+.song-list .number {
+  width: 24px;
+  color: #a89e8e;
+}
+
+.song-list .song {
+  flex: 1;
+}
+
+.song-list .length {
+  color: #a89e8e;
+}
+
+/* ---------- 11. Link at the end of a section ---------- */
+
+.more-link {
+  margin-top: 48px;
+  padding-top: 28px;
+  border-top: 1px solid #332e28;
+}
+
+.release .more-link {
+  max-width: none;
+}
+
+/* ---------- 12. Small list of links ---------- */
+
+.link-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.link-list li {
+  padding: 6px 14px;
+  border: 1px solid #332e28;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.link-list a:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* ---------- 13. Contact form ---------- */
+
+.contact-grid {
+  display: flex;
+  gap: 48px;
+}
+
+.contact-text {
+  flex: 1;
+}
+
+.contact-form {
+  flex: 1;
+  padding: 26px;
+  border: 1px solid #332e28;
+  background-color: #171411;
+}
+
+.contact-form legend {
+  padding: 0;
+  font-family: "Big Shoulders Display", Impact, sans-serif;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.contact-form fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.form-note {
+  margin-bottom: 20px;
+  color: #a89e8e;
+  font-size: 13px;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+
+.form-row .field {
+  flex: 1;
+}
+
+.field {
+  margin-bottom: 16px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 6px;
+  color: #c0b6a6;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #332e28;
+  background-color: #0d0c0b;
+  color: #f0ebe2;
+  font-family: "Work Sans", Arial, sans-serif;
+  font-size: 15px;
+}
+
+.field textarea {
+  height: 130px;
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: 2px solid #c2452c;
+  outline-offset: 1px;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.contact-details {
+  margin-top: 24px;
+  border-top: 1px solid #332e28;
+}
+
+.contact-details li {
+  padding: 12px 0;
+  border-bottom: 1px solid #332e28;
+}
+
+.contact-details span {
+  display: block;
+  color: #a89e8e;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* ---------- 14. Footer ---------- */
+
+.footer {
+  padding: 60px 0 30px 0;
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #332e28;
+}
+
+.footer-about {
+  max-width: 300px;
+}
+
+.footer-about strong {
+  display: block;
+  margin-bottom: 8px;
+  font-family: "Big Shoulders Display", Impact, sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.footer-about p {
+  color: #a89e8e;
+  font-size: 14px;
+}
+
+.footer-list h2 {
+  margin-bottom: 10px;
+  color: #a89e8e;
+  font-family: "Work Sans", Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.footer-list li {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 18px;
+  color: #a89e8e;
+  font-size: 12px;
+}
+
+/* ---------- 15. Skip link ---------- */
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  padding: 10px 16px;
+  background-color: #f0ebe2;
+  color: #0d0c0b;
+}
+
+.skip-link:focus {
+  left: 10px;
+  top: 10px;
+}
+
+/* ---------- 16. Smaller screens ---------- */
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 56px;
+  }
+
+  .hero h1 {
+    font-size: 64px;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+
+  .section {
+    padding: 44px 0;
+  }
+
+  .hero {
+    padding: 52px 0 44px 0;
+  }
+
+  .lineup {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .member,
+  .release,
+  .contact-grid {
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .member img,
+  .release img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 520px) {
+  .lineup {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nav ul {
+    gap: 14px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+  }
+}

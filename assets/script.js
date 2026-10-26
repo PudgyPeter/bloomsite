@@ -131,7 +131,9 @@ document.addEventListener("DOMContentLoaded", function () {
       var button = track.querySelector(".track-toggle");
       if (button) setTrack(button, true);
       if (shouldScroll) {
-        window.setTimeout(function () { scrollToEl(track, 14); }, 40);
+        window.setTimeout(function () {
+          scrollToEl(track, 14);
+        }, 40);
       }
       return true;
     }
@@ -140,7 +142,9 @@ document.addEventListener("DOMContentLoaded", function () {
     if (rel) {
       openRelease(rel);
       if (shouldScroll) {
-        window.setTimeout(function () { scrollToEl(rel, 14); }, 40);
+        window.setTimeout(function () {
+          scrollToEl(rel, 14);
+        }, 40);
       }
       return true;
     }
@@ -184,7 +188,11 @@ document.addEventListener("DOMContentLoaded", function () {
       e.preventDefault();
       history.replaceState(null, "", "#" + hash);
       var el = document.getElementById(hash);
-      if (el) window.setTimeout(function () { scrollToEl(el, 14); }, 40);
+      if (el) {
+        window.setTimeout(function () {
+          scrollToEl(el, 14);
+        }, 40);
+      }
     });
   });
 
@@ -227,7 +235,9 @@ document.addEventListener("DOMContentLoaded", function () {
   function activateMember(id, shouldScroll) {
     if (!id) return false;
 
-    var target = buttons.filter(function (b) { return b.dataset.target === id; })[0];
+    var target = buttons.filter(function (b) {
+      return b.dataset.target === id;
+    })[0];
     if (!target) return false;
 
     buttons.forEach(function (b) {
